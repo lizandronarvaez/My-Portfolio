@@ -80,7 +80,7 @@ a {
     }
 
     .navegacion__enlace {
-        border-radius: 10px 10px 0 0;
+        font-size: 1.8rem;
     }
 
     .navegacion__titulo {
@@ -93,12 +93,16 @@ a {
     text-align: center;
 }
 
+.navegacion__enlaces {
+    display: inline-flex;
+}
+
 .navegacion__enlace {
     display: block;
     color: #1f1f1f;
-    font-size: 1.8rem;
     padding: 1rem;
     text-decoration: none;
+    border-radius: 10px 10px 0 0;
 }
 
 .navegacion__enlace:hover {
@@ -154,7 +158,6 @@ p {
     border-right: 4px solid;
     color: var(--letraBlanca);
     overflow: hidden;
-    padding-top: 1rem;
     white-space: nowrap;
 }
 
