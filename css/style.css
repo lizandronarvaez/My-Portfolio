@@ -41,6 +41,10 @@ body {
     background-color: #f1eded;
 }
 
+.modo__oscuro .footer p {
+    color: var(--letraBlanca);
+}
+
 /* Fin de modo oscuro */
 /* Tamaños de fuente de letras */
 h1 {
@@ -58,7 +62,11 @@ h3 {
 img {
     filter: brightness(1.1);
     mix-blend-mode: normal;
-    max-width: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Nav */
@@ -72,17 +80,10 @@ img {
     }
 
     .navegacion__enlace {
-        display: flex;
-        justify-content: center;
         border-radius: 10px 10px 0 0;
-        color: #1f1f1f;
-        font-size: 1.8rem;
-        padding: 1rem;
-        text-decoration: none;
     }
 
-    .navegacion__titulo,
-    .navegacion__enlaces {
+    .navegacion__titulo {
         padding: 0 1rem;
     }
 
@@ -93,8 +94,7 @@ img {
 }
 
 .navegacion__enlace {
-    display: flex;
-    justify-content: center;
+    display: block;
     color: #1f1f1f;
     font-size: 1.8rem;
     padding: 1rem;
@@ -109,12 +109,8 @@ img {
 /* main */
 @media (min-width: 768px) {
     .contenedor {
-        background-color: royalblue;
-        background-repeat: no-repeat;
-        background-size: cover;
         display: grid;
-        grid-template-columns: 40% auto;
-        column-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .informacion--titulo {
@@ -127,32 +123,32 @@ img {
 
 .contenedor {
     background-color: royalblue;
-    background-repeat: no-repeat;
-    background-size: cover;
-    column-gap: 2rem;
-    padding: 0 1rem;
 }
-.container__informacion{
+
+.container__informacion {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.informacion {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.informacion {
     letter-spacing: 1px;
     line-height: 3rem;
+    padding: 3rem;
 }
-.informacion h3,
+
+.informacion img {
+    width: 50%;
+}
+
+.informacion,
+h3,
 p {
     color: var(--letraBlanca);
+    text-align: center;
 }
-.informacion-negrita{
+
+.informacion-negrita {
     color: var(--letraNegra);
 }
+
 .informacion--titulo {
     animation: teclado 3s steps(40), blink 1s normal both infinite;
     border-right: 4px solid;
@@ -166,7 +162,10 @@ p {
     from {
         width: 0;
     }
-    to{width: 70%;}
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink {
@@ -176,9 +175,7 @@ p {
 }
 
 .logotipo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 3rem 0;
 }
 
 /* Icon informacion */
@@ -186,10 +183,6 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 0 10rem;
-}
-
-.iconos a {
-    text-decoration: none;
     text-align: center;
 }
 
