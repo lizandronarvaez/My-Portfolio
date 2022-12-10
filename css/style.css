@@ -79,8 +79,7 @@ a {
 
 .navegacion {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 1rem;
 }
@@ -105,9 +104,11 @@ a {
 }
 
 .navegacion__titulo {
-    font-size: 1.95rem;
+    font-size: 1.5rem;
 }
-
+.navegacion__titulo span{
+    font-size: 1.9rem;
+}
 .hamburger {
     cursor: pointer;
     display: block;
@@ -129,7 +130,9 @@ a {
     .navegacion__titulo {
         padding: 0 1rem;
     }
+    .navegacion__titulo span{
 
+    }
 }
 
 @media (min-width: 992px) {
@@ -149,9 +152,12 @@ a {
     }
 
     .navegacion__titulo {
-        font-size: 3rem;
+        font-size: 2rem;
     }
-
+    .navegacion__titulo span{
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
     .hamburger {
         display: none;
     }
@@ -206,6 +212,24 @@ p {
 
 @media (min-width: 768px) {
     .contenedor {
+        /* display: grid; */
+    }
+
+    .informacion--titulo {
+        white-space: nowrap;
+        border-right: 4px solid;
+        font-size: 3rem;
+        max-width: 39rem;
+        overflow: hidden;
+        animation: teclado 3s steps(40), blink 1s normal both infinite;
+    }
+
+    .informacion {
+        text-align: center;
+    }
+}
+@media (min-width: 992px){
+    .contenedor {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -223,7 +247,6 @@ p {
         text-align: center;
     }
 }
-
 @keyframes teclado {
     from {
         width: 0;
