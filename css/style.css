@@ -7,11 +7,13 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
 /* Scroll Snapts */
 .navegacion,
-.contenedor,
+.container__informacion,
 .footer {
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -217,7 +219,7 @@ p {
     color: var(--letraBlanca);
     font-size: 1.8rem;
     overflow: hidden;
-    max-width: 24.2rem;
+    max-width: 24.8rem;
     white-space: nowrap;
 }
 
