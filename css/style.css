@@ -210,6 +210,7 @@ p {
 }
 
 .informacion--titulo {
+    margin: 0 auto;
     animation: teclado 3s steps(40), blink 1s normal both infinite;
     border-right: 4px solid;
     color: var(--letraBlanca);
