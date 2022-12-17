@@ -99,6 +99,8 @@ a {
     display: block;
     width: 100%;
     text-align: center;
+    animation:fadeIn;
+    animation-duration: 1s;
 }
 .navegacion__enlace {
     display: flex;
@@ -124,6 +126,12 @@ a {
     cursor: pointer;
     display: block;
     flex: 0;
+}
+.hamburger__item{
+    width: 3rem;
+    padding-top: 0.3rem;
+    margin: 0.5rem 0;
+    background-color:black;
 }
 
 @media (min-width: 768px) {

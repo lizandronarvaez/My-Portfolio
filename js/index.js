@@ -7,8 +7,14 @@ menu.addEventListener('click', () => {
 })
 // Modo Oscuro
 let buttonDark = document.querySelector(".enlace__icon");
-let menuSvg=document.querySelector(".hamburger svg")
+let hamburger = document.querySelectorAll(".hamburger .hamburger__item")
 buttonDark.addEventListener('click', () => {
     document.body.classList.toggle("modo__oscuro")
+    hamburger.forEach(item => {
+        item.style.backgroundColor == "white" ?
+            item.style.backgroundColor = "black"
+            : item.style.backgroundColor = "white"
+    }
+    )
 })
 
