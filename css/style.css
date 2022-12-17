@@ -44,10 +44,6 @@ body {
     color: var(--letraNegra);
 }
 
-.modo__oscuro .navegacion__enlaces {
-    display: flex;
-}
-
 .modo__oscuro .navegacion__enlace {
     color: #f1eded;
 }
