@@ -6,13 +6,7 @@ buttonDark.addEventListener('click', () => {
 
 // Menu Hamburger
 let menu = document.querySelector(".hamburger")
-let navegacion = document.querySelectorAll(".navegacion__enlaces .navegacion__enlace")
+let navegacion = document.querySelector(".navegacion__enlaces")
 menu.addEventListener('click', () => {
-    navegacion.forEach(item => {
-        if (item.style.display == "none") {
-            item.style.display = "unset"
-        } else {
-            item.style.display = "none"
-        }
-    })
+    navegacion.classList.toggle('mostrar__enlaces')
 })

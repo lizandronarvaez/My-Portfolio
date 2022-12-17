@@ -96,14 +96,17 @@ a {
 
 .navegacion__enlaces {
     width: 100%;
-    /* padding: 1rem 0; */
     text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.navegacion__enlace {
     display: none;
+}
+.mostrar__enlaces{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.navegacion__enlace {
+    display: flex;
+    justify-content: center;
     color: #1f1f1f;
     font-weight: 600;
     padding: 1rem;
